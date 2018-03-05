@@ -34,10 +34,10 @@ new Vue({
             } else {
                 this.playerHealth = this.playerHealth;
             }
-            // this.monsterAttack();
+            this.monsterAttack();
         },
         giveUp: function () {
-
+            this.gameIsRunning = false;
         },
         monsterAttack: function () {
             this.playerHealth -= this.calculationDamage(5, 12);
